@@ -4,6 +4,10 @@ public class ClassB extends ClassA {
     String variableB_A;
     String variableB_B;
 
+    public ClassB(String variableB_A, String variableA_A) {
+        super(variableA_A);
+        this.variableB_A = variableB_A;
+    }
 
     public void doSomethingB_A() {
         this.variableB_A = "eomfcspdc";

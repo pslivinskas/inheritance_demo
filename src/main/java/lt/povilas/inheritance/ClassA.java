@@ -6,6 +6,10 @@ public class ClassA {
     String variableA_A;
     String variableA_B;
 
+    public ClassA(String variableA_A) {
+        this.variableA_A = variableA_A;
+    }
+
     public void doSomethingA_A() {
 
     }
