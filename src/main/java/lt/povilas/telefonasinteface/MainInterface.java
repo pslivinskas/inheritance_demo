@@ -1,5 +1,8 @@
 package lt.povilas.telefonasinteface;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainInterface {
     public static void main(String[] args) {
 //        Telefonas telefonas01 = new Telefonas("8-5-123 4561");
@@ -32,6 +35,34 @@ public class MainInterface {
         taksofonas01.paskambink("8-650-45645");
         System.out.println(taksofonas01);
 
+        System.out.println("-------------");
+        System.out.println("--- Lists ---");
+        System.out.println("-------------");
+
+        Mobilus mobilus02 = new Mobilus("8-687-12381", "1234 1234 1234");
+        Mobilus mobilus03 = new Mobilus("8-687-12381", "1234 1234 1234");
+        Taksofonas taksofonas02 = new Taksofonas(0.85);
+        Taksofonas taksofonas03 = new Taksofonas(1.55);
+
+        String kintString01;
+        kintString01 = "wioefnoiwe";
+        String kintString02 = new String("iefnjoie");
+
+        List<Object> telefonai = new ArrayList<>();
+
+        telefonai.add(mobilus01);
+        telefonai.add(mobilus02);
+        telefonai.add(mobilus03);
+        System.out.println(telefonai);
+
+        telefonai.add(taksofonas01);
+        telefonai.add(taksofonas02);
+        telefonai.add(taksofonas03);
+        System.out.println(telefonai);
+
+        telefonai.add(kintString01);
+        telefonai.add(kintString02);
+        System.out.println(telefonai);
 
     }
 }
